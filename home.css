@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    position:relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.sidebar{
+    height: 100%;
+    top: 0;
+    left: 0;
+    width:240px;
+    background-color:#294A70;
+    padding: 10px 25px;
+    transition: all 0.5s ease;
+}
+
+.sidebar .logo_content .logo{
+    color: #fff;
+    display:flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+}
+
+.logo_content .logo i{
+    font-size: 20px;
+    font-weight: 400;
+}
+/*
+.sidebar #btn{
+position: absolute;
+color: #fff;
+left: 12%;
+top: 25px;
+font-size: 20px;
+
+}
+*/
+
+.sidebar ul{
+    margin-top: 20px;
+}
+
+.sidebar ul li{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 0 5px;
+    list-style: none;
+}
+
+.sidebar ul li a{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover{
+    color: #11101d;
+    background: #fff;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.sidebar ul li a i{
+    height: 50px;
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.logo{
+    padding: 70px 0px 20px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo_name{
+    padding: 0px 50px 0px 20px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.sidebar .profile_content{
+position:absolute;
+color:#fff;
+bottom:0;
+left:0;
+width:100%;
+}
+.sidebar .profile_content .profile{
+    position:relative;
+    padding: 10px 6px;
+    height: 60px;  
+    background: #699BF7;
+}
+
+.profile_content .profile .profile_details{
+    display: flex;
+    align-items:center;
+}
+
+.profile .profile_details img{
+    height: 45px;
+    width: 45px;
+    object-fit:cover;
+    border-radius: 12px;
+}
+.profile .profile_details .name_job{
+   margin-left:10px; 
+   
+}
+.profile .profile_details .name{
+    font-size: 15px;
+    font-weight: 900;
+ }
+ .profile .profile_details .job{
+    font-size: 15px;
+
+ }
+ .profile #log_out{
+    position: absolute;
+    left: 14%;
+    bottom: 5px;
+    transform: translateX(-50%);
+    min-width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 12px;
+ }
+
+
+ @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    .sidebar{
+
+        height: 100vh;
+        width:78px;
+        transition: all 0.5s ease;
+    }
+    
+    .sidebar .links_name{
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.5s ease;
+    }
+
+  }
