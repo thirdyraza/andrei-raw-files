@@ -10,15 +10,11 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+    <div class="container">
     <div class="sidebar">
-        <div class="logo_content">
-            <div class="logo_header">
-                <div class="logo">
-                    <i class='bx bxs-circle' ></i>
-                    <div class="logo_name">SFIMS</div>
-                </div>
-            </div>
-
+        <div class="logo">
+            <i class='bx bxs-circle' ></i>
+            <div class="logo_name">SFIMS</div>
         </div>
         <ul class="nav_list">
         <li>
@@ -57,40 +53,173 @@
                 <span class="links_name">Register</span>
             </a>
         </li>
+        <div class="settings">
         <li>
             <a href="#">
                 <i class="fa-solid fa-gear"></i>
                 <span class="links_name">Setting<a/span>
             </a>
         </li>
+        </div>
     </ul>
     </div>
-    <script>
-        let sidebar = document.querySelector(".sidebar")
 
-        sidebar.onclick=function(){
-            sidebar.classList.toggle("active");
-        }
+    <!-- Homeapge Content -->
+    <div class="content_container">
+        <div class="anchor_container">
+            <p>Terms of Use</p>
+            <p>Disclaimer</p>
+            <p>USL Website</p>
+            <p>Register</p>
+        </div>
+        <div class="image_header">
+            <img src="US.jpg" alt="">
+        </div>
+        <div class="btn_container">
+            <button class="button-58" role="button">RESERVE A FACILITY </button>
+            <div class="btnreserve"><i class="fa-solid fa-circle-plus"></i></div>
+        </div>
+        <div class="schedule">
+            <div class="header">
+                <h1>Schedule Requests</h1>
+            </div>
+            <div class="requests_container">
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Activity</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Venue</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dummy</td>
+                            <td>Dummy</td>
+                            <td>Dummy</td>
+                            <td>Dummy</td>
+                        </tr>
+                        <tr class=>
+                            <td>Dummy</td>
+                            <td>Dummy</td>
+                            <td>Dummy</td>
+                            <td>Dummy</td>
+                        </tr>
+                        <tr>
+                            <td>Dummy</td>
+                            <td>Dummy</td>
+                            <td>Dummy</td>
+                            <td>Dummy</td>
+                        </tr>
+                        <tr class=>
+                            <td>Dummy</td>
+                            <td>Dummy</td>
+                            <td>Dummy</td>
+                            <td>Dummy</td>
+                        </tr>
+                        <tr class="btn_seemore">
+                            <td>See more ...</td>
+                        </tr>
+                        <!-- and so on... -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="bldg_container">
+            <div class="bldg1">
+            <h1>BUILDING INFORMATION</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+            <div class="bldg2">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <button type="button" class="button">
+                <span class="button__text">See more...</span>
+                <span class="button__icon">
+                  <ion-icon name="cloud-download-outline"></ion-icon>
+                </span>
+              </button>
+              <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+        </div>
+        <div class="bldg3">
+            <img src="home_bldg.png">
+         </div>
+        </div>
+        <div class="faq_contact">
+                <div class="contact_container">
+                <h1>Let's work together</h1>
+                <p>Contact me for further queries or suggestions to improve our system.</p>
+                <div class="email_container">
+                    <button type="button" class="button_contact">
+                        <span class="button__icon">
+                            <i class="fa-solid fa-phone"></i>
+                          </span>
+                        <span class="item_contact">                    
+                            <h3>TeamCepheus@usl.edu.ph</h3>
+                            <p>Responds within 1-2 days</p></span>
+                      </button>
+                      <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+                    <i class="fa-solid fa-messages"></i>
+                </div>
+                <div class="phone_container">
+                    <button type="button" class="button_contact">
+                        <span class="button__icon">
+                            <i class="fa-solid fa-phone"></i>
+                          </span>
+                        <span class="item_contact">                    
+                            <h3>+63 9230824660</h3>
+                            <p>Weekdays 7:00 AM to 7:00 PM,
+                            Weekends 9:00 AM to 6:00 PM</p></span>
+                      </button>
+                      <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+                    <i class="fa-solid fa-messages"></i>
 
-        sidebar.onclick=function(){
-            sidebar.classList.toggle("active");
-        }
-
-     </script>
-    <!-- 
-        <div class="profile_content">
-            <div class="profile">
-                <div class="profile_details">
-                    <img src="profile.jpg" alt="">
-                    <div class="name_job">
-                        <div class="name">Herbert Corpuz</div>
-                        <div class="job">Administrator</div>
-                    </div>
-                    <i class='bx bx-log-out' id="log_out"></i>
                 </div>
             </div>
-        </div>      
+            <div class="faq_container">
+                <div class="faq">
+                    <div class="faq_header">
+                        <div class="Q">Q.</div>
+                        <h2>How to  schedule a facility?</h2>
+                    </div>
+                    <div class="faq_content">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+
+                <div class="btnfaqs">
+                    <p>VIEW ALL FAQS</p>
+                    <i class="fa-solid fa-comments-question-check"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="footer_links">
+                <a>ABOUT US</a>
+                <a>CONTACT US</a>
+                <a>SUPPORT</a>
+                <a>RESOURCES</a>
+            </div>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-linkein"></i>
+            </div>
+            <div class="footer_info">
+                <div class="info1">
+                    <a>Terms of Use</a>
+                </div>
+                <div class="info2">
+                    <p>© 2022 University of Saint Louis Tuguegarao. All Rights Reserved.</p>
+                </div>
+
+            </div>
+        </div>
     </div>
-     -->
+</div>
+    
 </body>
 </html>
